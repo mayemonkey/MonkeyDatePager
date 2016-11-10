@@ -37,14 +37,14 @@ public class MonkeyDatePager extends FrameLayout implements View.OnClickListener
         this.onMonkeyTimeChangedListener = listener;
     }
 
-    public interface OnMonkeyTypeChangeListener {
-        void onTypeChange(int type);
+    public interface OnMonkeyTypeChangedListener {
+        void onTypeChanged(int type);
     }
 
-    private OnMonkeyTypeChangeListener onMonkeyTypeChangeListener;
+    private OnMonkeyTypeChangedListener onMonkeyTypeChangedListener;
 
-    public void setOnMonkeyTypeChangeListener(OnMonkeyTypeChangeListener listener) {
-        this.onMonkeyTypeChangeListener = listener;
+    public void setOnMonkeyTypeChangedListener(OnMonkeyTypeChangedListener listener) {
+        this.onMonkeyTypeChangedListener = listener;
     }
 
     private List<String> list = new ArrayList<>();
@@ -110,7 +110,7 @@ public class MonkeyDatePager extends FrameLayout implements View.OnClickListener
      * @param type      类型
      * @param list_data 显示内容
      */
-    public void setTypeAndData(int type, List<String> list_data) {
+    private void setTypeAndData(int type, List<String> list_data) {
         this.type = type;
 
         list.clear();
@@ -129,8 +129,8 @@ public class MonkeyDatePager extends FrameLayout implements View.OnClickListener
             vp_time.setCurrentItem(time.get(Calendar.DAY_OF_MONTH) - 1);
         }
 
-        if (onMonkeyTypeChangeListener != null) {
-            onMonkeyTypeChangeListener.onTypeChange(type);
+        if (onMonkeyTypeChangedListener != null) {
+            onMonkeyTypeChangedListener.onTypeChanged(type);
         }
     }
 

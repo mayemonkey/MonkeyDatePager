@@ -6,7 +6,7 @@ import android.widget.TextView;
 import com.maye.view.MonkeyDatePager;
 import java.util.Calendar;
 
-public class HomeActivity extends Activity implements MonkeyDatePager.OnMonkeyTimeChangedListener, MonkeyDatePager.OnMonkeyTypeChangeListener {
+public class HomeActivity extends Activity implements MonkeyDatePager.OnMonkeyTimeChangedListener, MonkeyDatePager.OnMonkeyTypeChangedListener {
 
     private TextView tv_date;
     private MonkeyDatePager mdp_home;
@@ -21,14 +21,14 @@ public class HomeActivity extends Activity implements MonkeyDatePager.OnMonkeyTi
 
     private void initComponent() {
         mdp_home = (MonkeyDatePager) findViewById(R.id.mdp_home);
-        mdp_home.setOnMonkeyTypeChangeListener(this);
+        mdp_home.setOnMonkeyTypeChangedListener(this);
         mdp_home.setOnMonkeyTimeChangedListener(this);
         tv_date = (TextView) findViewById(R.id.tv_date);
 
     }
 
     @Override
-    public void onTypeChange(int type) {
+    public void onTypeChanged(int type) {
         String innerTime = mdp_home.getInnerTime();
         tv_date.setText("Date:" + innerTime);
     }
