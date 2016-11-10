@@ -21,9 +21,13 @@ dependencies {
 
 ## 公开方法
 ```getTime```                           获取当前显示的时间值Calendar
+
 ```getType```                           获取当前显示的时段
+
 ```getInnerTime```                      获取当前控件所代表的时间
+
 ```setMonkeyOnTypeChangedListener```    设置时段改变监听
+
 ```setMonkeyOnTimeChangedListener```    设置时间改变监听
 
 ##使用示例
