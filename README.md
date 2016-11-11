@@ -32,7 +32,7 @@ dependencies {
 
 ##使用示例
 
-```
+```Java
 MonkeyDatePager mdp_home = (MonkeyDatePager) findViewById(R.id.mdp_home);
 mdp_home.setOnMonkeyTypeChangedListener(new OnMonkeyTypeChangedListener(){
     public void onTypeChanged(int type){
