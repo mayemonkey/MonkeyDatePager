@@ -49,6 +49,7 @@ mdp_home.setOnMonkeyTimeChangedListener(new OnMonkeyTimeChangedListener(){
 
 ##感谢
 [AutoFitTextView](https://github.com/grantland/android-autofittextview)
+[MaterialTabs](https://github.com/neokree/MaterialTabs)
 
 ##License
 ```
