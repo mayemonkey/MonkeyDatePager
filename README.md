@@ -1,5 +1,6 @@
 # MonkeyDatePager
-自定义控件，用于展示不同时段下的不同时间
+自定义控件，用于展示不同时段下的不同时间  
+![效果演示](https://github.com/mayemonkey/MonkeyDatePager/blob/master/sample.gif)
 
 ## 依赖使用
 1.在build.gradle(project)中：
@@ -20,15 +21,11 @@ dependencies {
 ```
 
 ## 公开方法
-```getTime```                           获取当前显示的时间值Calendar
-
-```getType```                           获取当前显示的时段
-
-```getInnerTime```                      获取当前控件所代表的时间
-
-```setMonkeyOnTypeChangedListener```    设置时段改变监听
-
-```setMonkeyOnTimeChangedListener```    设置时间改变监听
+```getTime```                           获取当前显示的时间值Calendar  
+```getType```                           获取当前显示的时段  
+```getInnerTime```                      获取当前控件所代表的时间  
+```setMonkeyOnTypeChangedListener```    设置时段改变监听  
+```setMonkeyOnTimeChangedListener```    设置时间改变监听  
 
 ##使用示例
 
@@ -48,8 +45,7 @@ mdp_home.setOnMonkeyTimeChangedListener(new OnMonkeyTimeChangedListener(){
 ```
 
 ##感谢
-[AutoFitTextView](https://github.com/grantland/android-autofittextview)
-
+[AutoFitTextView](https://github.com/grantland/android-autofittextview)  
 [MaterialTabs](https://github.com/neokree/MaterialTabs)
 
 ##License
